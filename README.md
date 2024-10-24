@@ -1,4 +1,3 @@
-# mathviz-gemini
 # Mathematical Function Visualizer
 
 ![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat&logo=python&logoColor=white)
@@ -7,27 +6,24 @@
 
 An interactive web application that combines and visualizes mathematical functions using Google's Gemini Pro API. Users can select different mathematical functions, adjust their parameters, and visualize their combinations in both 2D and 3D representations.
 
-![Application Screenshot](screenshots/app_preview.png)
+![Application Screenshot](https://github.com/user-attachments/assets/2c5b702d-d641-49b5-ad3f-3af0c782406d)
 
 ## Features
 
 - 🔄 Interactive function combination and visualization
-- 📊 Real-time 2D and 3D plotting
+- 📊 Real-time 2D and 3D plotting with Plotly
 - 🤖 AI-powered function analysis using Google Gemini
-- ⚙️ Adjustable function parameters
-- 📐 Customizable plot ranges
+- ⚙️ Adjustable function parameters for each mathematical function
+- 📐 Customizable plot ranges with min/max values
 - 📝 Detailed mathematical analysis of combined functions
-
-## Demo
-
-[Add a GIF or link to live demo if available]
+- 🎨 Clean, modern interface built with Streamlit
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/mathematical-function-visualizer.git
-cd mathematical-function-visualizer
+git clone https://github.com/sohail000/mathviz-gemini.git
+cd mathviz-gemini
 ```
 
 2. Install required packages:
@@ -50,15 +46,21 @@ streamlit run app.py
 2. Open your browser and navigate to `http://localhost:8501`
 
 3. Select functions and adjust parameters:
-   - Choose from available mathematical functions
-   - Adjust function parameters
-   - Set x-axis range
-   - Click "Generate Combined Visualization"
+   - Choose from available mathematical functions (Sine, Cosine, Polynomial)
+   - Adjust function parameters to modify behavior
+   - Set custom x-axis range for visualization
+   - Click "Generate Combined Visualization" to see the result
+
+4. Analyze the results:
+   - View individual function plots
+   - See the combined function visualization
+   - Explore the 3D surface plot
+   - Read Gemini's mathematical analysis
 
 ## Project Structure
 
 ```
-mathematical-function-visualizer/
+mathviz-gemini/
 ├── app.py                 # Main Streamlit application
 ├── config.py             # Configuration and function definitions
 ├── gemini_adapter.py     # Google Gemini API integration
@@ -78,6 +80,20 @@ mathematical-function-visualizer/
 - python-dotenv
 - matplotlib
 
+## Available Functions
+
+1. **Sine Function**
+   - Adjustable frequency parameter
+   - Form: `sin(ax)` where 'a' is the parameter
+
+2. **Cosine Function**
+   - Adjustable frequency parameter
+   - Form: `cos(ax)` where 'a' is the parameter
+
+3. **Polynomial Function**
+   - Adjustable power parameter
+   - Form: `x^n` where 'n' is the parameter
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
@@ -88,19 +104,27 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## Possible Enhancements
+
+- Add more mathematical functions (tangent, exponential, logarithmic)
+- Implement function composition
+- Add animation capabilities
+- Include more parameter controls
+- Add function analysis history
+- Implement data export features
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
-- Google Gemini API for function analysis
-- Streamlit for the web interface
-- Plotly for interactive visualizations
+- Google Gemini API for providing mathematical analysis
+- Streamlit for the interactive web interface
+- Plotly for powerful visualization capabilities
+- The open-source community for various helpful libraries
 
-## Contact
-![image](https://github.com/user-attachments/assets/2c5b702d-d641-49b5-ad3f-3af0c782406d)
+## Project Links
 
-Your Name - [@yourusername](https://twitter.com/yourusername)
-
-Project Link: [https://github.com/yourusername/mathematical-function-visualizer](https://github.com/yourusername/mathematical-function-visualizer)
+- Repository: [https://github.com/sohail000/mathviz-gemini](https://github.com/sohail000/mathviz-gemini)
+- Report an issue: [https://github.com/sohail000/mathviz-gemini/issues](https://github.com/sohail000/mathviz-gemini/issues)
