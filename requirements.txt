@@ -1,0 +1,13 @@
+# Core dependencies
+streamlit
+numpy
+plotly
+matplotlib
+
+google-generativeai
+
+
+python-dotenv
+
+black
+pylint
